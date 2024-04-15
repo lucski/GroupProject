@@ -1,6 +1,17 @@
 import java.util.*;
 
 public class Main {
+
+    //Define the "time of day" the user wants to choose a meal from
+    static Map<String, List<String>> timeOfDay= new HashMap<>();
+
+    static{
+        timeOfDay.put("Breakfast", Arrays.asList("Japanese", "Chinese", "American", "Italian"));
+        timeOfDay.put("Lunch", Arrays.asList("Japanese", "Chinese", "American", "Italian"));
+        timeOfDay.put("Dinner", Arrays.asList("Japanese", "Chinese", "American", "Italian"));
+    }
+     
+    
     // Define cuisines and corresponding recipes
     static Map<String, List<String>> cuisines = new HashMap<>();
 
@@ -13,6 +24,11 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+         //Prompt for user for what type of meal
+        System.out.println("What type fo meal do you want? (Breakfast, Lunch, Dinner");
+        System.out.println("Available cuisines: " + String.join(", ", timeOfDay.keySet()));
+        String chosenTimeOfDay = scanner.nextLine().trim();
 
         // Prompt user to choose a cuisine
         System.out.println("What culture? (pick a cuisine: Japanese, Chinese, American, Italian)");
