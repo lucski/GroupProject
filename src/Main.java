@@ -10,13 +10,7 @@ public class Main {
         newRecipe.newCuisine();
         newBreakfast breakfast = new newBreakfast();
 
-
-
-
-
-
-
-    Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Display meal options and other cuisines
         System.out.println("Please choose one of the following options:");
@@ -34,60 +28,40 @@ public class Main {
         int choice = scanner.nextInt();
         scanner.nextLine(); // Consume the newline character after nextInt()
 
-        // Map the user's choice to the corresponding cuisine
-        String[] cuisineOptions = {
-                "Breakfast",
-                "Brunch",
-                "Lunch",
-                "Dinner",
-                "Japanese",
-                "Chinese",
-                "American",
-                "Italian"
-        };
+        // Map the user's choice to the corresponding cuisine used a switch instead to call
+        //the classes
+        switch (choice) {
+            case 1:
+                // Print breakfast options
+                newBreakfast.breakfastDisplay();
+                break;
+            case 2:
+                // Add code for brunch options
+                break;
+            case 3:
+                // Add code for lunch options
+                break;
+            case 4:
+                // Add code for dinner options
+                break;
+            case 5:
+                // Add code for Japanese options
+                break;
+            case 6:
+                // Add code for Chinese options
+                break;
+            case 7:
+                // Add code for American options
+                break;
+            case 8:
+                // Add code for Italian options
+                break;
+            default:
+                System.out.println("Invalid choice. Please try again.");
+                break;
+        }
 
         // Validate choice and select the cuisine
-        if (choice < 1 || choice > 8) {
-            System.out.println("Invalid choice. Please try again.");
-            return;
-        }
 
-        String chosenCuisine = cuisineOptions[choice - 1];
-
-        // Display recipes for the chosen cuisine
-        List<String> recipes = newRecipe.cuisines.get(chosenCuisine);
-        System.out.println("Recipes for " + chosenCuisine + ": " + String.join(", ", recipes));
-
-        // Prompt user to choose a recipe or ask for one at random
-        System.out.println("Enter the number of the recipe (1-" + recipes.size() + ") to select a recipe, or type 'random' for a random recipe:");
-        String userChoice = scanner.nextLine().trim();
-
-        String selectedRecipe = null;
-
-        if (userChoice.equalsIgnoreCase("random")) {
-            // Choose a random recipe from the list
-            Random random = new Random();
-            selectedRecipe = recipes.get(random.nextInt(recipes.size()));
-        } else {
-            // Validate user input and choose the selected recipe
-            try {
-                int recipeIndex = Integer.parseInt(userChoice) - 1;
-                if (recipeIndex >= 0 && recipeIndex < recipes.size()) {
-                    selectedRecipe = recipes.get(recipeIndex);
-                } else {
-                    System.out.println("Invalid recipe choice. Please try again.");
-                    return;
-                }
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid input. Please enter a number or 'random'.");
-                return;
-            }
-        }
-
-        // Output the selected recipe
-        System.out.println("You selected: " + selectedRecipe);
-
-        //all the breakfast options from class newBreakfast
-       newBreakfast.breakfastDisplay();
    }
 }
