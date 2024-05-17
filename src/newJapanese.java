@@ -64,6 +64,17 @@ public class newJapanese {
                     "▢ 1 tsp minced garlic\n" +
                     "▢ 1 tbsp vegetable oil\n" +
                     "▢ Sesame seeds and chopped green onions for garnish");
+          // Check if "Tempura" is the selected recipe
+          if (selectedRecipe.equals("Tempura")) {
+            System.out.println("You selected Tempura!");
+            // Print Tempura recipe and ASCII art
+            System.out.println("The Recipe is:\n" +
+                    "▢ Assorted vegetables (e.g., bell peppers, zucchini, sweet potatoes)\n" +
+                    "▢ 1 cup all-purpose flour\n" +
+                    "▢ 1 egg\n" +
+                    "▢ 1 cup ice-cold water\n" +
+                    "▢ Oil for frying\n" +
+                    "▢ Tempura dipping sauce (tentsuyu) for serving\n");
         }
     }
 }
