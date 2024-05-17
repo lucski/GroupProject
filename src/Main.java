@@ -9,6 +9,8 @@ public class Main {
         newRecipe recipe = new newRecipe();
         newRecipe.newCuisine();
         newBreakfast breakfast = new newBreakfast();
+        newLunch lunch = new newLunch();
+        newBrunch brunch = new newBrunch();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -37,9 +39,11 @@ public class Main {
                 break;
             case 2:
                 // Add code for brunch options
+                newBrunch.brunchDisplay();
                 break;
             case 3:
                 // Add code for lunch options
+                newLunch.lunchDisplay();
                 break;
             case 4:
                 // Add code for dinner options

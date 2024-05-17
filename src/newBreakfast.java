@@ -39,6 +39,7 @@ public class newBreakfast {
                     "▢ 1/4 cup butter, (60g | 2 oz)\n" +
                     "▢ 2 teaspoons pure vanilla extract\n" +
                     "▢ 1 large egg");
+            System.out.println("/Users/kameronzurzolo/Downloads/GroupProject/src/Pancake Art");
         }
         //this will help display smoothie recipe
         if (selectedRecipe.equals("Smoothie")) {
@@ -47,6 +48,35 @@ public class newBreakfast {
                     "1 fresh banana, peeled\n" +
                     "1 cup milk (I used almond milk)\n" +
                     "1 cup ice");
+            System.out.println("      ████                            \n" +
+                    "    ██  ▒▒██                          \n" +
+                    "      ██  ▒▒██                        \n" +
+                    "      ░░██░░▓▓██                      \n" +
+                    "          ██  ▓▓██                    \n" +
+                    "            ██  ██                    \n" +
+                    "            ██▒▒██                    \n" +
+                    "            ██  ██                    \n" +
+                    "          ████▒▒██████████████        \n" +
+                    "      ████  ██████            ██      \n" +
+                    "    ██░░░░░░░░░░░░░░░░░░░░░░░░░░██    \n" +
+                    "██████████████████████████████████████\n" +
+                    "██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██\n" +
+                    "██████████████████████████████████████\n" +
+                    "  ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██  \n" +
+                    "  ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██  \n" +
+                    "  ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████  \n" +
+                    "  ░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██░░  \n" +
+                    "    ██▒▒▒▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒▒▒██    \n" +
+                    "    ██▒▒▒▒▒▒▒▒  ▒▒  ▒▒  ▒▒▒▒▒▒▒▒██    \n" +
+                    "      ██▒▒▒▒▒▒  ▒▒  ▒▒  ▒▒▒▒▒▒██      \n" +
+                    "      ██▒▒▒▒▒▒  ▒▒  ▒▒  ▒▒▒▒▒▒██      \n" +
+                    "      ██▒▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒▒▒▒▒██      \n" +
+                    "      ██▒▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒▒▒▒▒██      \n" +
+                    "      ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██      \n" +
+                    "      ░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██░░      \n" +
+                    "        ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██        \n" +
+                    "        ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██        \n" +
+                    "        ██████████████████████        \n");
         }
         //this will help display Omelette recipe
         if (selectedRecipe.equals("Omelette")) {
