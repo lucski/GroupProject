@@ -8,9 +8,9 @@ public class newDinner {
 
         // Display the list of lunch recipes
         System.out.println("Dinner Recipes:");
-        List<String> lunchRecipes = newRecipe.cuisines.get("Dinner");
-        for (int i = 0; i < lunchRecipes.size(); i++) {
-            System.out.println((i + 1) + ". " + lunchRecipes.get(i));
+        List<String> dinnerRecipes = newRecipe.cuisines.get("Dinner");
+        for (int i = 0; i < dinnerRecipes.size(); i++) {
+            System.out.println((i + 1) + ". " + dinnerRecipes.get(i));
         }
 
         // Prompt the user to enter a number corresponding to a recipe
@@ -19,13 +19,13 @@ public class newDinner {
         scanner.nextLine(); // Consume the newline character
 
         // Check if the entered number is within the valid range
-        if (recipeNumber < 1 || recipeNumber > lunchRecipes.size()) {
+        if (recipeNumber < 1 || recipeNumber > dinnerRecipes.size()) {
             System.out.println("Invalid recipe number. Please try again.");
             return;
         }
 
         // Get the recipe corresponding to the entered number
-        String selectedRecipe = lunchRecipes.get(recipeNumber - 1);
+        String selectedRecipe = dinnerRecipes.get(recipeNumber - 1);
 
         // Check if "Steak" is the selected recipe
         if (selectedRecipe.equals("Steak")) {

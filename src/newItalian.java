@@ -40,10 +40,10 @@ public class newItalian {
                     "▢ Salt and pepper to taste\n" +
                     "▢ Grated Parmesan cheese for serving");
 
-        
+
         }
 
-       
+
         // Check for "Pizza"
         if (selectedRecipe.equals("Pizza")) {
             System.out.println("You selected Pizza!");
@@ -57,34 +57,36 @@ public class newItalian {
                     "▢ 1/2 cup pizza sauce\n" +
                     "▢ 1 1/2 cups mozzarella cheese, shredded\n" +
                     "▢ Toppings of your choice (pepperoni, vegetables, etc.)");
-            
-          // Check for "Tiramisu"
-          if (selectedRecipe.equals("Tiramisu")) {
-            System.out.println("You selected Tiramisu!");
-            // Print Tiramisu recipe and ASCII art
-            System.out.println("The Recipe is:\n" +
-                    "▢ 6 egg yolks\n" +
-                    "▢ 3/4 cup granulated sugar\n" +
-                    "▢ 1 cup mascarpone cheese\n" +
-                    "▢ 1 1/2 cups heavy cream\n" +
-                    "▢ 2 cups brewed espresso, cooled\n" +
-                    "▢ 1/2 cup coffee liqueur (e.g., Kahlua)\n" +
-                    "▢ 24 ladyfinger cookies\n" +
-                    "▢ Cocoa powder for dusting\n");
-             // Check for "Risotto"
-              if (selectedRecipe.equals("Risotto")) {
-            System.out.println("You selected Risotto!");
-            // Print Risotto recipe and ASCII art
-            System.out.println("The Recipe is:\n" +
-                    "▢ 1 1/2 cups Arborio rice\n" +
-                    "▢ 4 cups chicken or vegetable broth\n" +
-                    "▢ 1/2 cup dry white wine\n" +
-                    "▢ 1/2 cup grated Parmesan cheese\n" +
-                    "▢ 2 tbsp unsalted butter\n" +
-                    "▢ 1 small onion, finely chopped\n" +
-                    "▢ 2 cloves garlic, minced\n" +
-                    "▢ Salt and pepper to taste\n" +
-                    "▢ Fresh parsley for garnish\n");
+
+            // Check for "Tiramisu"
+            if (selectedRecipe.equals("Tiramisu")) {
+                System.out.println("You selected Tiramisu!");
+                // Print Tiramisu recipe and ASCII art
+                System.out.println("The Recipe is:\n" +
+                        "▢ 6 egg yolks\n" +
+                        "▢ 3/4 cup granulated sugar\n" +
+                        "▢ 1 cup mascarpone cheese\n" +
+                        "▢ 1 1/2 cups heavy cream\n" +
+                        "▢ 2 cups brewed espresso, cooled\n" +
+                        "▢ 1/2 cup coffee liqueur (e.g., Kahlua)\n" +
+                        "▢ 24 ladyfinger cookies\n" +
+                        "▢ Cocoa powder for dusting\n");
+                // Check for "Risotto"
+                if (selectedRecipe.equals("Risotto")) {
+                    System.out.println("You selected Risotto!");
+                    // Print Risotto recipe and ASCII art
+                    System.out.println("The Recipe is:\n" +
+                            "▢ 1 1/2 cups Arborio rice\n" +
+                            "▢ 4 cups chicken or vegetable broth\n" +
+                            "▢ 1/2 cup dry white wine\n" +
+                            "▢ 1/2 cup grated Parmesan cheese\n" +
+                            "▢ 2 tbsp unsalted butter\n" +
+                            "▢ 1 small onion, finely chopped\n" +
+                            "▢ 2 cloves garlic, minced\n" +
+                            "▢ Salt and pepper to taste\n" +
+                            "▢ Fresh parsley for garnish\n");
+                }
+            }
         }
     }
 }
