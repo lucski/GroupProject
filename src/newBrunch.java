@@ -27,69 +27,143 @@ public class newBrunch {
         // Get the recipe corresponding to the entered number
         String selectedRecipe = lunchRecipes.get(recipeNumber - 1);
 
-        // Check if "Sandwich" is the selected recipe
-        if (selectedRecipe.equals("Sandwich")) {
-            System.out.println("You selected Sandwich!");
+        // Check if "Avocado Toast" is the selected recipe
+        if (selectedRecipe.equals("Avocado Toast")) {
+            System.out.println("You selected Avocado Toast!");
             System.out.println("The Recipe is:\n" +
-                    "slices sandwich bread\n" +
-                    "tablespoons peanut butter\n" +
-                    "teaspoons grape jelly or 2 teaspoons strawberry jam");
-            System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡖⠉⠉⠙⠒⠦⢤⣀⡀⠀⠀⠀⠀⠀⠀⠀\n" +
-                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣸⠦⡀⠀⠀⠀⠀⠀⠀⠉⠙⠲⢄⡀⠀⠀⠀\n" +
-                    "⠀⠀⠀⠀⠀⣀⡠⠤⠒⠊⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠲⣄⠀\n" +
-                    "⣤⠤⠒⠊⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳\n" +
-                    "⢹⠉⠢⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⡀⠀⠀⠀⢠\n" +
-                    "⠈⢳⢄⡀⠉⠢⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠤⠒⠉⠀⣈⡉⠉⠉⡹\n" +
-                    "⠀⢈⡷⣌⠐⢄⡀⠑⢦⡀⠀⠀⠀⠀⠀⣀⠤⠒⠈⠁⣀⢤⢔⣒⠩⠜⠹⠛⡝⢦\n" +
-                    "⢰⡚⢑⠆⠙⠢⢌⠶⢄⠈⠲⡀⢠⠔⠉⣀⠤⣔⠮⣋⣀⠼⠂⠒⠂⣁⠥⠮⠕⡿\n" +
-                    "⠀⢸⠛⠶⡤⢀⡀⠀⢈⠟⢦⡈⢁⡶⠭⠔⠊⡥⠜⠀⢸⡤⠤⠔⢊⣠⠤⠦⠴⠁\n" +
-                    "⠀⠀⠑⠤⣌⠑⢬⡑⠋⠀⢠⣉⣉⠤⠤⠒⠒⠁⣀⣠⣊⠤⠖⠋⠁⠀⠀⠀⠀⠀\n" +
-                    "⠀⠀⠀⠀⠀⠙⢦⡈⠢⠒⠭⢥⣀⣀⠠⢄⣲⠽⠚⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
-                    "⠀⠀⠀⠀⠀⠀⠀⠈⠢⣄⡀⣤⠤⠖⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
-                    "⣶⣶⣶⣶⣶⣶⣶⣶⣶⣾⣿⣷⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶");
+                    "1 slice of bread (I like thick-sliced whole-grain bread best)\n" +
+                    "½ ripe avocado\n" +
+                    "Pinch of salt\n" +
+                    "Optional: Any of the extra toppings suggested in this post");
+            System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣶⣲⣻⣿⢯⡿⣟⣿⣟⣶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⢖⣿⡿⣷⢿⡻⣿⣽⡻⣽⡻⣽⣯⣿⣿⣿⣽⣿⣿⣿⣷⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⢺⡝⣲⣟⡞⣟⢧⣻⣝⢮⣽⣳⢽⣹⢷⣿⡞⣿⡿⣿⣽⣿⣿⣿⣿⣿⣿⣶⣄⡀⠀⠀⠀⠀⠀⠀⠠⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⢔⣶⡝⡽⡜⣥⢧⣚⡱⣎⡳⣭⢶⣳⢮⢿⣜⣳⢯⣟⣮⢷⣻⣷⣻⢯⣿⣯⣿⣿⣿⣿⣿⣿⣿⣿⣦⡄⠀⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣯⢳⡌⡖⣩⢳⣛⣮⣦⣳⣽⣚⣵⣹⣎⣿⣯⣛⣯⣟⣻⣾⣹⣯⣷⣯⣿⣟⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⣿⣿⠸⣬⢧⢧⡷⣯⢿⠻⣾⣿⢿⣿⡿⢿⣿⡿⣿⠿⡿⣿⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣖⡟⡯⢖⢦⡳⣩⣞⡎⠷⡽⣭⢓⣮⢳⢧⣖⡽⣳⣭⢿⣫⢿⣟⣽⣷⣻⣿⣾⣯⡿⣽⣿⣻⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠂⠄⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣿⣾⣫⣯⣝⡎⠶⣵⢇⡞⣽⣫⡷⣭⣻⡼⣹⣶⣫⢷⣳⡽⡷⣯⣽⣿⣿⣷⣏⣿⣿⣿⣽⣿⣿⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡝⡜⡄\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣿⠿⣟⣛⠛⠽⠽⠿⣫⣝⡾⣽⣾⣣⠟⣼⣣⢿⡞⣷⢯⣷⢿⣿⢿⡿⣽⡿⣿⣯⣿⣽⣷⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣼⢳\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡝⠊⣼⣎⠍⠋⣠⠤⣌⢐⣬⠒⣊⢛⠻⣷⢾⣿⣻⣿⣻⣿⣿⣿⣿⣿⣻⣟⣿⣿⣿⢾⣽⣿⣾⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡽⣞⣯\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⠊⠨⠁⡀⠈⠀⠘⡠⢕⠈⠀⡯⡄⠑⠠⡨⠝⣻⣿⣿⣿⣯⢯⣿⣿⣽⣿⢿⣻⡿⣿⣳⣿⣿⣿⣽⣿⣿⣿⣿⣿⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣻⢿⣹\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠤⢙⣬⣢⠰⡎⢂⡰⠆⡈⡲⠗⡤⡃⠀⠀⠀⠀⠕⠦⣰⠙⢛⢿⣿⣿⣾⣿⣽⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣻⡞⣧⢷\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣎⠱⠀⠱⣀⡄⡈⠂⠀⠠⠆⠹⠀⡀⠀⣄⠀⠈⠃⢬⠛⢝⢻⣿⢿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⡞⣧⢿⡹⣞\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡩⠀⢵⡁⠀⠀⠐⠁⠡⣊⢆⡀⠲⠢⠁⠠⠒⠈⠄⡠⠀⠇⢙⠷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣟⣞⣯⡽⣞\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢯⢄⡳⡀⠀⠀⠀⠐⣁⠎⢈⠌⡖⠜⡨⢫⡀⠠⠀⠘⠀⠂⡀⠂⠘⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣾⡽⢾⣹⢯\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡯⢢⡈⡓⠀⢀⡢⠁⠐⡓⠂⡘⠈⠀⠀⠀⡄⠀⢀⠂⢴⠀⠅⠀⡈⢄⣘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣽⣳⢟⡯⣟⡞\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⠄⠢⠀⠢⠈⠀⠀⠀⠁⠈⠁⠀⠀⠒⠀⠁⡰⠆⣀⠈⠂⠀⠊⠀⠀⠀⢿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⡷⣯⢿⡝⣮⠙\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⠓⢄⠈⢀⡀⠄⠀⠀⠤⠖⢈⠢⠀⠀⠑⡀⡀⠌⡁⠀⠀⢲⠀⠀⢈⠈⣤⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣿⣳⣟⡻⣞⠹⡌⡉\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⢀⣰⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣻⣀⠀⢀⠀⠀⠶⡄⠀⠀⠀⠀⠀⠀⣠⡷⢀⡆⡄⢰⣼⠇⣀⢦⣇⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⠷⡟⠶⢠⠃\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠒⠈⠁⠁⠒⠠⠤⠤⠄⠀⠀⠀⠠⠤⠤⠤⠀⡤⡤⠀⠤⣣⡍⣆⠈⡠⢄⡐⠀⠀⠀⠀⠀⠀⣀⠕⠁⠌⠁⢀⠈⠀⠀⣿⡼⢩⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⡾⣭⠳⡍⢆⠁⢂⠠⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⣲⠹⠉⠀⠀⠀⠀⠙⡿⢿⣤⣄⠔⣘⠁⠄⠀⠀⠀⢁⠀⠈⡀⠀⠀⠀⠀⡠⡅⡀⢣⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⢿⡟⣯⠝⢎⡑⢂⠂⠁⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠤⠄⠀⠀⠀⠀⠐⠒⠂⣒⢖⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠻⠿⢶⣤⣨⠵⠄⠀⠀⠀⠂⠐⠐⣋⠠⠋⢪⠠⠅⢑⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣯⢷⡿⣽⣫⠟⡬⠩⠄⡈⠀⠀⠀⠀⡀⠀\n" +
+                    "⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⢒⡝⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠻⢶⠯⣴⡞⣠⣂⣤⠗⠀⠄⠂⠔⠁⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣽⡳⣭⢛⠜⡡⠒⠤⠡⠌⠤⠡⠄⠡\n" +
+                    "⠀⠀⠀⠀⠀⠀⠠⠠⠤⠬⣥⠤⣤⣴⣚⠕⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠫⠛⢟⣷⣦⣰⠢⠄⠐⡰⠚⡀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⡟⣷⣛⠳⡙⠔⣂⠒⡐⢀⢂⡐⢀⢂⡐⣀⠂\n" +
+                    "⠀⠀⠀⠀⠀⠀⢀⣴⣶⠚⠖⠾⠊⠉⠠⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠠⡀⠐⡀⠐⠑⠻⠿⣿⣾⣀⡟⣅⣾⣿⣿⣿⣿⣿⣿⡿⠿⠉⠂⠁⠌⠀⠁⠀⠁⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⣴⣿⡟⢁⠅⠀⠀⠀⠀⠁⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠐⢸⠀⠠⠀⢀⡁⠙⣿⣼⣶⣿⣿⣿⣿⡿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⢀⢀⠀⡀⠀⠀⠀⠠⠀⠄⠀\n" +
+                    "⠀⠀⠀⠀⢸⣿⢳⠓⠁⠀⠀⠠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠨⠁⠄⠆⣠⣾⣿⣆⡉⠁⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⢀⠀⢀⡀⣀⢀⡀⣀⠄⡠⢈⡀⠒⣈⠁\n" +
+                    "⠀⠀⠀⠀⣿⣧⠅⠀⠀⠀⢀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⢀⣠⣿⣿⣿⣿⣿⠇⠀⠠⠀⠀⠀⠀⠂⠀⠀⠀⠐⡀⡀⠂⠀⠀⠀⠄⡀⡀⠂⢀⠂⠄⠁⠠⢁⢀⠊\n" +
+                    "⠀⠀⠀⠀⢻⣿⢴⠀⠀⠀⢬⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠁⠀⠀⠄⣘⣿⣿⣿⣿⣿⡿⠗⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠁⠄⠐⠀⠉⠂⠊⠐⡁⢂⠁⢄⠂\n" +
+                    "⠀⠀⠀⠀⠈⣿⣯⡵⡄⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⠌⠀⠀⠠⣰⣾⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠠⠐⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠘⣿⣖⡟⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⡀⢀⠔⠀⠠⣠⣾⣿⣿⣿⣿⠟⠁⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠂⠂⠀⠀⠀⠄⠠⠂⠤⠠⠄⠂⢀⠢⠔⠂\n" +
+                    "⠀⠀⠀⠀⠀⠀⠾⣿⣿⣿⣧⣰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠀⠁⢠⣦⣿⣿⣿⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠰⠈⠀⠀⠀⠀⠈⠈⠁⠈⠀⡀⠀⠀⠰⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⡀⣼⣿⣿⣿⣿⣿⠯⠄⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠈⠉⢀⢃⠘⠃⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⡀⠀⠀⠀⠀⠄⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢿⣿⣿⡿⣧⣠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣽⣾⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠒⠀⠀⠀⠀⠀⠀⠠⠀⠀⠠⠀⠀⠀⠂⠀⠂⠄⠀⠠⠀⠂⠠⠐⠈\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢽⣿⣿⣟⡷⣷⣦⣄⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠔⣼⣿⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠈⠻⢿⣿⣿⣾⣿⣿⣛⣳⣶⣦⢤⣄⣀⡄⣀⣀⣀⣢⣤⣾⣶⣾⣿⣿⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠈⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠈⠙⠻⢿⣿⣿⢿⣿⣿⣿⣿⣾⣽⣿⣾⣯⣿⣿⣿⣿⣿⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⡀⢀⠀⠀⠀⠀⠁⠁\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠻⠾⠿⢿⣿⣿⣿⣿⣿⣿⣿⠿⡿⠟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠒⠀⠐⠂⠀⠀⠀⠀⠐⠀⠀⠀⠀⠂⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
         }
-        //this will help display salad recipe
-        if (selectedRecipe.equals("Salad")) {
-            System.out.println("You selected Salad!");
-            System.out.println("The Recipe is:\n" + "1 large or 2 small heads of romaine lettuce\n" +
-                    "Parmesan cheese, shredded or shaved\n" +
-                    "Crisp croutons – homemade can be made several days ahead. " +
-                    "The recipe below makes enough for 2 salads.\n" +
-                    "Caesar salad dressing – homemade is best and here is our " +
-                    "favorite store-bought dressing in a pinch");
-            System.out.println("");
+        //this will help display Eggs Benedict recipe
+        if (selectedRecipe.equals("Eggs Benedict")) {
+            System.out.println("You selected Eggs Benedict!");
+            System.out.println("The Recipe is:\n" + "▢ 2 English muffins\n" +
+                    "▢ 4 large eggs\n" +
+                    "▢ 4 slices Canadian bacon\n" +
+                    "▢ Vinegar , just a splash\n" +
+                    "For the Hollandaise sauce:\n" +
+                    "▢ 4 Tablespoons butter\n" +
+                    "▢ 4 egg yolks\n" +
+                    "▢ 2 teaspoons lemon juice , or lime juice\n" +
+                    "▢ 1 Tablespoon heavy whipping cream\n" +
+                    "▢ salt and pepper (to taste)");
+            System.out.println("  ,'\"`.\n" +
+                    " /     \\\n" +
+                    ":       :\n" +
+                    ":       :\n" +
+                    " `.___,'");
         }
-        //this will help display Omelette recipe
-        if (selectedRecipe.equals("Soup")) {
-            System.out.println("You selected Soup!");
-            System.out.println("4 tablespoons unsalted butter\n" +
-                    "1 medium yellow onion, chopped\n" +
-                    "½ teaspoon sea salt\n" +
-                    "Freshly ground black pepper\n" +
-                    "3 garlic cloves, chopped\n" +
-                    "¼ cup all-purpose flour\n" +
-                    "2 cups whole milk or unsweetened almond milk\n" +
-                    "2 cups vegetable broth\n" +
-                    "3 cups chopped broccoli florets\n" +
-                    "1 large carrot, julienned or finely chopped\n" +
-                    "½ teaspoon Dijon mustard\n" +
-                    "8 ounces shredded cheddar cheese, about 2 heaping cups\n" +
-                    "Homemade croutons, for serving, optional");
+        //this will help display Quiche recipe
+        if (selectedRecipe.equals("Quiche")) {
+            System.out.println("You selected Quiche!");
+            System.out.println("1 unbaked Flaky Pie Crust (what I used) or All Butter Pie Crust*\n" +
+                    "4 large eggs\n" +
+                    "1/2 cup whole milk*\n" +
+                    "1/2 cup heavy cream or heavy whipping cream*\n" +
+                    "1/4 teaspoon each salt and pepper*\n" +
+                    "1 cup shredded or crumbled cheese such as feta, cheddar, goat cheese, or gruyere\n" +
+                    "up to 2 cups add-ins (see recipe note)\n" +
+                    "optional toppings for serving: extra cheese, chopped herbs, hollandaise sauce, " +
+                    "& freshly ground pepper to taste");
+            System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠈⠁⢷⡄⢀⠀⠀⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠔⠈⠁⠀⠈⠢⣀⡀⠐⠛⠚⣰⢀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠔⠉⠠⠄⠀⠀⠀⠀⠀⠈⠲⣇⠀⠉⣛⣁⣣⡀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⢀⠠⠐⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣦⠀⠀⢚⣉⣉⠄⠀\n" +
+                    "⠀⢀⡀⠐⠈⠀⠒⣀⣀⠒⠂⠀⠀⠀⠀⢈⡀⠀⠀⠀⠀⠀⠈⠀⠀⡤⢍⡉⠀⡇\n" +
+                    "⠀⠏⢑⢶⠒⢶⠶⡶⡦⠄⢠⣈⠉⠀⣤⣄⣀⣉⣁⣒⡂⠀⠤⠀⠂⠉⠀⠀⡠⠃\n" +
+                    "⠐⢆⣈⣜⠀⣜⠀⢃⠃⡀⣰⡃⠠⡄⠈⣶⡁⠀⠢⢬⣯⡈⠉⢩⠇⡠⠊⠀⠀⠀\n" +
+                    "⠀⣞⠰⠈⣹⠟⢒⡒⢢⣬⠋⠁⠲⣤⠾⠄⣑⡶⠞⢻⡀⢉⡩⢃⠌⠀⠀⠀⠀⠀\n" +
+                    "⠀⠙⠓⠀⠩⠦⡀⣤⠆⠘⠂⠀⣚⣡⠀⠈⣴⣇⠠⠤⠴⡋⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                    "⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠐⠈⠀⠐⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
         }
-        //this will help display Pasta recipe
-        if (selectedRecipe.equals("Pasta")) {
-            System.out.println("You selected Pasta!");
-            System.out.println("The Recipe is:\n" + "▢ 8 ounces uncooked penne pasta\n" +
-                    "▢ 1 tablespoon olive oil\n" +
-                    "▢ 2 tablespoons butter\n" +
-                    "▢ 1/2 small onion chopped finely\n" +
-                    "▢ 1 clove garlic minced\n" +
-                    "▢ 1/4 cup vodka\n" +
-                    "▢ 1/4 cup tomato paste see note\n" +
-                    "▢ 3/4 cup heavy/whipping cream\n" +
-                    "▢ Salt & pepper to taste\n" +
-                    "▢ Fresh basil, sliced thin optional, to taste\n" +
-                    "▢ Freshly grated parmesan cheese optional, to taste\n");
+        //this will help display Fruit Salad recipe
+        if (selectedRecipe.equals("Fruit Salad")) {
+            System.out.println("You selected Fruit Salad!");
+            System.out.println("The Recipe is:\n" + "Sauce:\n" +
+                    "\n" +
+                    "⅔ cup fresh orange juice\n" +
+                    "\n" +
+                    "⅓ cup fresh lemon juice\n" +
+                    "\n" +
+                    "⅓ cup packed brown sugar\n" +
+                    "\n" +
+                    "½ teaspoon grated orange zest\n" +
+                    "\n" +
+                    "½ teaspoon grated lemon zest\n" +
+                    "\n" +
+                    "1 teaspoon vanilla extract\n" +
+                    "\n" +
+                    "Salad:\n" +
+                    "\n" +
+                    "2 cups cubed fresh pineapple\n" +
+                    "\n" +
+                    "2 cups strawberries, hulled and sliced\n" +
+                    "\n" +
+                    "3 kiwi fruit, peeled and sliced\n" +
+                    "\n" +
+                    "3 bananas, sliced\n" +
+                    "\n" +
+                    "2 oranges, peeled and sectioned\n" +
+                    "\n" +
+                    "1 cup seedless grapes\n" +
+                    "\n" +
+                    "2 cups blueberries");
+            System.out.println(" _\n" +
+                    "//\\\n" +
+                    "V  \\\n" +
+                    " \\  \\_\n" +
+                    "  \\,'.`-.\n" +
+                    "   |\\ `. `.       \n" +
+                    "   ( \\  `. `-.                        _,.-:\\\n" +
+                    "    \\ \\   `.  `-._             __..--' ,-';/\n" +
+                    "     \\ `.   `-.   `-..___..---'   _.--' ,'/\n" +
+                    "      `. `.    `-._        __..--'    ,' /\n" +
+                    "        `. `-_     ``--..''       _.-' ,'\n" +
+                    "          `-_ `-.___        __,--'   ,'\n" +
+                    "             `-.__  `----\"\"\"    __.-'\n" +
+                    "                   `--..____..--'");
         }
     }
 }

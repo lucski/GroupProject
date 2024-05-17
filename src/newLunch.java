@@ -59,7 +59,7 @@ public class newLunch {
                     "favorite store-bought dressing in a pinch");
             System.out.println("");
         }
-        //this will help display Omelette recipe
+        //this will help display Soup recipe
         if (selectedRecipe.equals("Soup")) {
             System.out.println("You selected Soup!");
             System.out.println("4 tablespoons unsalted butter\n" +

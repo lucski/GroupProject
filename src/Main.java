@@ -8,9 +8,22 @@ public class Main {
         // Define cuisines and corresponding recipes through newRecipe class
         newRecipe recipe = new newRecipe();
         newRecipe.newCuisine();
+        //New Class for breakfast recipes
         newBreakfast breakfast = new newBreakfast();
+        //New Class for lunch recipes
         newLunch lunch = new newLunch();
+        //New Class for brunch recipes
         newBrunch brunch = new newBrunch();
+        //New Class for dinner recipes
+        newDinner dinner = new newDinner();
+        //new class for japanese recipes
+        newJapanese japanese = new newJapanese();
+        //new class for chinese recipes
+        newChinese Chinese = new newChinese();
+        //new class for american recipes
+        newAmerican American = new newAmerican();
+        //new class for italian recipes
+        newItalian Italian = new newItalian();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -46,6 +59,7 @@ public class Main {
                 newLunch.lunchDisplay();
                 break;
             case 4:
+                newDinner.dinnerDisplay();
                 // Add code for dinner options
                 break;
             case 5:
