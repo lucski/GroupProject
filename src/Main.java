@@ -59,20 +59,24 @@ public class Main {
                 newLunch.lunchDisplay();
                 break;
             case 4:
-                newDinner.dinnerDisplay();
                 // Add code for dinner options
+                newDinner.dinnerDisplay();
                 break;
             case 5:
                 // Add code for Japanese options
+                newJapanese.japaneseDisplay();
                 break;
             case 6:
                 // Add code for Chinese options
+                newChinese.chineseDisplay();
                 break;
             case 7:
                 // Add code for American options
+                newAmerican.americanDisplay();
                 break;
             case 8:
                 // Add code for Italian options
+                newItalian.italianDisplay();
                 break;
             default:
                 System.out.println("Invalid choice. Please try again.");
