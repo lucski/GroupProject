@@ -42,8 +42,8 @@ public class newAmerican {
          
         }
 
-        // Additional recipes can be added here in a similar manner
-        // Example for "Fried Chicken"
+        
+        // Check if  "Fried Chicken" is the selected recipe
         if (selectedRecipe.equals("Fried Chicken")) {
             System.out.println("You selected Fried Chicken!");
             System.out.println("The Recipe is:\n" +
@@ -56,7 +56,28 @@ public class newAmerican {
                     "▢ 1/2 tsp black pepper\n" +
                     "▢ Vegetable oil for frying");
 
-            
+           if (selectedRecipe.equals("Mac and Cheese")) {
+            System.out.println("You selected Mac and Cheese!");
+            // Print Mac and Cheese recipe and ASCII art
+            System.out.println("The Recipe is:\n" +
+                    "▢ 8 oz elbow macaroni\n" +
+                    "▢ 2 cups shredded cheddar cheese\n" +
+                    "▢ 1/2 cup milk\n" +
+                    "▢ 2 tbsp butter\n" +
+                    "▢ Salt and pepper to taste\n" +
+                    "Optional: breadcrumbs for topping\n");
+           
+            if (selectedRecipe.equals("BBQ Ribs")) {
+            System.out.println("You selected BBQ Ribs!");
+            // Print BBQ Ribs recipe and ASCII art
+            System.out.println("The Recipe is:\n" +
+                    "▢ 3 lbs pork ribs\n" +
+                    "▢ 1 cup BBQ sauce\n" +
+                    "▢ 2 tbsp brown sugar\n" +
+                    "▢ 1 tbsp paprika\n" +
+                    "▢ 1 tbsp garlic powder\n" +
+                    "▢ 1 tbsp onion powder\n" +
+                    "▢ Salt and pepper to taste\n");
         }
     }
 }
