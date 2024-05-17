@@ -39,9 +39,11 @@ public class newDinner {
                     "2 cloves garlic, peeled and quartered\n" +
                     "1 sprig fresh rosemary" + "\n Directions: " +
                     "\n Thoroughly pat steak dry with paper towels. Just before cooking, generously season with 1 1/2 tsp salt and 1 tsp black pepper\n" +
-                    "Heat the cast iron pan until hot then add 1/2 Tbsp oil over medium-high heat, swirling to coat. Once the oil is very hot, add steaks to the skillet. Sear the steaks on the first side for 4 minutes until a brown crust has formed then flip and cook another 3-4 minutes. Using tongs, turn the steak on its sides to render the white fat and sear the edges (1-minute per edge).\n" +
-                    "Reduce heat to medium and immediately add 2 Tbsp butter, quartered garlic cloves and rosemary to the pan. Spoon the butter sauce over the steak, tilting the pan to get butter on your spoon. Continue spooning the sauce over the steak for a minute or until the steak is about 5-10 degrees from your desired doneness (the temperature will continue to rise another 5-10 degrees while steaks rest).\n" +
+                    "Heat the cast iron pan until hot then add 1/2 Tbsp oil over medium-high heat, swirling to coat. Once the oil is very hot, add steaks to the skillet. \n Sear the steaks on the first side for 4 minutes until a brown crust has formed then flip and cook another 3-4 minutes. \n Using tongs, turn the steak on its sides to render the white fat and sear the edges (1-minute per edge).\n" +
+                    "Reduce heat to medium and immediately add 2 Tbsp butter, quartered garlic cloves and rosemary to the pan. Spoon the butter sauce over the steak, tilting the pan to get butter on your spoon. " +
+                    "Continue spooning the sauce over the steak for a minute or until the steak is about 5-10 degrees from your desired doneness (the temperature will continue to rise another 5-10 degrees while steaks rest).\n" +
                     " \n" + "Transfer steak to a cutting board, loosely cover and rest 10 minutes before slicing into 1/2\" strips to serve. Spoon extra butter sauce over sliced steak to serve.\n");
+            //Steak ASCII art for display
             System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣶⣶⣦⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣾⠟⠋⠁⠀⠀⠀⠀⠀⠙⠻⣷⣄⠀⠀⠀⠀⠀⠀\n" +
@@ -78,6 +80,7 @@ public class newDinner {
                     "Remove salmon to a plate. Rest for 3 minutes – it will rise to 53°C/127°F. (See Note 2 for internal temperatures)\n" +
                     "Add lemon juice to butter: Put pan back on unlit stove to keep butter hot. Add lemon juice.\n" +
                     "Serve: Place salmon on serving plates. Spoon over butter (be judicious, it's rich!), garnish with a sprinkle of parsley. Pictured in the post with Cauliflower Mash and leafy greens with French Vinaigrette.");
+            //Salmon ASCII art display
             System.out.println("     /`·.¸\n" +
                     "     /¸...¸`:·\n" +
                     " ¸.·´  ¸   `·.¸.·´)\n" +
@@ -162,6 +165,12 @@ public class newDinner {
                     "½ cup sliced roasted red peppers\n" +
                     "½ cup mint leaves\n" +
                     "Pinches red pepper flakes" + "\n Directions: " + "\n ");
+            //Print out pizza ASCII art
+            System.out.println("// \"\"--.._\n" +
+                    "||  (_)  _ \"-._\n" +
+                    "||    _ (_)    '-.\n" +
+                    "||   (_)   __..-'\n" +
+                    " \\\\__..--\"\"");
         }
     }
 }

@@ -35,6 +35,7 @@ public class newBrunch {
                     "½ ripe avocado\n" +
                     "Pinch of salt\n" +
                     "Optional: Any of the extra toppings suggested in this post");
+            //ASCII art display for avocado toast
             System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣶⣲⣻⣿⢯⡿⣟⣿⣟⣶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⢖⣿⡿⣷⢿⡻⣿⣽⡻⣽⡻⣽⣯⣿⣿⣿⣽⣿⣿⣿⣷⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⢺⡝⣲⣟⡞⣟⢧⣻⣝⢮⣽⣳⢽⣹⢷⣿⡞⣿⡿⣿⣽⣿⣿⣿⣿⣿⣿⣶⣄⡀⠀⠀⠀⠀⠀⠀⠠⠀\n" +
@@ -88,6 +89,7 @@ public class newBrunch {
                     "▢ 2 teaspoons lemon juice , or lime juice\n" +
                     "▢ 1 Tablespoon heavy whipping cream\n" +
                     "▢ salt and pepper (to taste)");
+            //ASCII art for eggs benedict
             System.out.println("  ,'\"`.\n" +
                     " /     \\\n" +
                     ":       :\n" +
@@ -106,6 +108,7 @@ public class newBrunch {
                     "up to 2 cups add-ins (see recipe note)\n" +
                     "optional toppings for serving: extra cheese, chopped herbs, hollandaise sauce, " +
                     "& freshly ground pepper to taste");
+            //ASCII art for Quiche
             System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠈⠁⢷⡄⢀⠀⠀⠀⠀⠀⠀⠀\n" +
                     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠔⠈⠁⠀⠈⠢⣀⡀⠐⠛⠚⣰⢀⠀⠀⠀⠀\n" +
@@ -150,6 +153,7 @@ public class newBrunch {
                     "1 cup seedless grapes\n" +
                     "\n" +
                     "2 cups blueberries");
+            //ASCII art display for fruit salad
             System.out.println(" _\n" +
                     "//\\\n" +
                     "V  \\\n" +
