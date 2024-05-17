@@ -44,9 +44,7 @@ public class newChinese {
                     "▢ Vegetable oil for frying\n" +
                     "▢ Green onions and sesame seeds for garnish");
 
-        }
-
-        // check if "Fried Rice"
+        // check if "Fried Rice" is selected
         if (selectedRecipe.equals("Fried Rice")) {
             System.out.println("You selected Fried Rice!");
             System.out.println("The Recipe is:\n" +
@@ -59,6 +57,41 @@ public class newChinese {
                     "▢ 1/2 cup green onions, sliced\n" +
                     "▢ 2 tbsp vegetable oil\n" +
                     "▢ Salt and pepper to taste");
+            // check if "Dumplings" is selected
+            if (selectedRecipe.equals("Dumplings")) {
+            System.out.println("You selected Dumplings!");
+            // Print Dumplings recipe 
+            System.out.println("The Recipe is:\n" +
+                    "▢ 1 lb ground pork\n" +
+                    "▢ 2 cups finely chopped napa cabbage\n" +
+                    "▢ 3 green onions, finely chopped\n" +
+                    "▢ 2 cloves garlic, minced\n" +
+                    "▢ 1 tbsp soy sauce\n" +
+                    "▢ 1 tbsp sesame oil\n" +
+                    "▢ 1 tsp grated ginger\n" +
+                    "▢ 1/4 tsp salt\n" +
+                    "▢ 1/4 tsp black pepper\n" +
+                    "▢ Dumpling wrappers\n" +
+                    "▢ Dipping sauce (e.g., soy sauce, vinegar, chili oil)\n");
+                
+                // check if "Kung Pao Chicken" is selected
+                if (selectedRecipe.equals("Kung Pao Chicken")) {
+            System.out.println("You selected Kung Pao Chicken!");
+            // Print Kung Pao Chicken recipe
+            System.out.println("The Recipe is:\n" +
+                    "▢ 1 lb boneless chicken thighs, cut into bite-sized pieces\n" +
+                    "▢ 2 tbsp soy sauce\n" +
+                    "▢ 1 tbsp hoisin sauce\n" +
+                    "▢ 1 tbsp rice vinegar\n" +
+                    "▢ 1 tbsp cornstarch\n" +
+                    "▢ 2 tbsp vegetable oil\n" +
+                    "▢ 3 cloves garlic, minced\n" +
+                    "▢ 1 inch ginger, minced\n" +
+                    "▢ 1/2 cup peanuts\n" +
+                    "▢ 2-3 dried red chilies\n" +
+                    "▢ 3 green onions, chopped\n" +
+                    "▢ Cooked rice for serving\n");
+
         }
     }
 }
